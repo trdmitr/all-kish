@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --boxShadow: 8px -8px 18px 8px rgba(167, 171, 173, 0.43);
+  --buttonShadow: -8px 15px 43px 20px rgba(34, 60, 80, 0.3) inset;
+  --buttonBack: #a0d7d7bd;
+  --buttonColor: #e2e3e4
+}
