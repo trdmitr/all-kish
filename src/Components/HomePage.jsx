@@ -7,6 +7,9 @@ export const HomePage = () => {
     const imgAlt = "Каверы Подземки"
     // const frontAudio = "https://drive.google.com/uc?export=download&id=1U3M7aGhmpFQHd3SNNupwghkrQagbRKq2";
     const imgTzi = "https://drive.google.com/uc?export=download&id=1gsY4lPUU4pJ07s0JwDBeJjUYddkAuSr3"
+    const yearTrib21 = 21;
+    const yearTrib22 = 22;
+    const yearTrib23 = 23;
   return (
       <div className="device device-iphone-x">
           <div className="device-frame">
@@ -17,9 +20,9 @@ export const HomePage = () => {
                       {/* <Link to={"/cavers21"} className={classes.navLink21}
                       onClick={() => {  handleClick(imgAlt);console.log('Клик!', value); }}                 
                     >2021</Link> */}
-                     <Link to={"/cavers21"} className={classes.navLink21}>2021</Link>
-                      <Link to={"/cavers22"} className={classes.navLink22}>2022</Link>
-                      <Link to={"/cavers23"} className={classes.navLink23}>2023</Link>
+                     <Link to={`/cavers${yearTrib21}`} className={classes.navLink21}>2021</Link>
+                      <Link to={`/cavers${yearTrib22}`} className={classes.navLink22}>2022</Link>
+                      <Link to={`/cavers${yearTrib23}`} className={classes.navLink23}>2023</Link>
                       <div className={classes.main}>
                       
                           {/* <div className={classes.article}><p >Вот и всё что было...</p></div> */}

@@ -31,7 +31,8 @@ function App() {
   console.log(sings)
 
     const urlParse21 =  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQbZ-zv6Iw7YB8B8IYyayLqLPyJYxdBl9tJoNB93wUb6_FmCntCAoiHEWmPo8Ohpg4LjZCLhU68a3no/pub?output=csv";
-    const urlParse22 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRBQ847ey_0J68AbS-jSJD8LwtsxtFK3tbX5lSoNxhgqwKy6R9gz2ITVOJXzAT-IPkPoNIZBgPcrDC_/pub?output=csv"
+    const urlParse22 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRBQ847ey_0J68AbS-jSJD8LwtsxtFK3tbX5lSoNxhgqwKy6R9gz2ITVOJXzAT-IPkPoNIZBgPcrDC_/pub?output=csv";
+    const urlParse23 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRaefbfGA1Q4zWVefwHf12eADp2mAb7Qhmd6-9-ArkESh9RJTfo2R263YIIDYB4a5fB_d5aF0scmHY2/pub?output=csv";
   //   const updateData = (value) => {
   //     setSongs({value })
   //  }
@@ -43,8 +44,8 @@ function App() {
           <Routes>
          <Route exact path="/" element={<HomePage/>} />
          <Route path="/cavers21" element={<CaverPage21/>} />
-         <Route path="/cavers22" element={<CaverPage22/>} />
-         <Route path="/cavers23" element={<CaverPage23/>} />
+         <Route path="/cavers22" element={<CaverPage21/>} />
+         <Route path="/cavers23" element={<CaverPage21/>} />
          <Route path="/cavers/:id" element={<SinglPage songs = {sings} />} /> 
          <Route path="*" element={<NotFound />} />
        </Routes>
