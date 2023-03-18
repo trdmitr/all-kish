@@ -1,7 +1,9 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useContext, useEffect, useMemo, useState } from 'react'
 import Papa from "papaparse";
 import { Link, useNavigate } from 'react-router-dom';
 import classes from "./CaverPage.module.css"
+import { Context } from './context'
+
 export const CaverPage21 = () => {
   const [data, setData] = useState({});
   // const singData = useRef({})
@@ -27,7 +29,12 @@ export const CaverPage21 = () => {
       }, [])
      
       console.log(data)
-      const songs = Array.from(data);
+     
+        const songs = Array.from(data);
+        const {sings, setSings} = useContext(Context);
+        // updateData(songs)
+      // const songs =
+      
       const singContent = useMemo(() => {
         // if (songError) 
         //   return <h1 >Ошибка загрузки!</h1>
@@ -37,7 +44,7 @@ export const CaverPage21 = () => {
          
         return  songs?.map((song, i) => {
           return (
-             <Link key={i} to={`/cavers/${song.id}`}>
+             <Link key={i} to={`/cavers/${song.id}`} onClick = {() => setSings(songs)}>
             <div className={classes.media}>
               <div className={classes.mediaImage}>
                 <img src={song.photo} width={100} alt={song.name} />
@@ -54,6 +61,7 @@ export const CaverPage21 = () => {
 
       }, [songs])
    return (
+   
      <div className="device device-iphone-x">
        <div className="device-frame">
          <div className="device-content">
@@ -79,5 +87,6 @@ export const CaverPage21 = () => {
        <div className="device-btns"></div>
        <div className="device-power"></div>
      </div>
+     
    )
 }
