@@ -18,8 +18,6 @@ export const CaverPage21 = () => {
   console.log(location.pathname)
   const urlParse =  urlLoc.includes('cavers21') ?  urlParse21 : urlLoc.includes('cavers22') ? urlParse22 : urlLoc.includes('cavers23') ? urlParse23 : "";
   console.log(urlParse)
-
-  // const urlParse =  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQbZ-zv6Iw7YB8B8IYyayLqLPyJYxdBl9tJoNB93wUb6_FmCntCAoiHEWmPo8Ohpg4LjZCLhU68a3no/pub?output=csv";
   useEffect (() => {
     Papa.parse(urlParse,
        {
