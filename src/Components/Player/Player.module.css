@@ -1,0 +1,14 @@
+.player {
+    /* background-color: rgba(0, 255, 255, 0.199) !important; */
+    text-align: center;
+    z-index: 2;
+    color: black;
+    font-size: 1em !important;
+    margin-top: 3em;
+    
+  }
+.player h2 {
+    /* margin-top: 1em; */
+    color: #29872c;
+    /* padding: 1em; */
+}

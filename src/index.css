@@ -18,4 +18,5 @@ code {
   --buttonBack: #a0d7d7bd;
   --buttonColor: #e2e3e4;
   --colorText: white;
+  --textShadow: 0px 4px 4px rgba(0,0,0,0.25);
 }

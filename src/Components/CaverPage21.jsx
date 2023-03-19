@@ -3,6 +3,7 @@ import Papa from "papaparse";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import classes from "./CaverPage.module.css"
 import { Context } from './context'
+import Player from './Player/Player';
 
 export const CaverPage21 = () => {
   const [data, setData] = useState({});
@@ -80,7 +81,7 @@ export const CaverPage21 = () => {
                 {singContent}
               
              </div>
-             {/* <Player songs={songs} /> */}
+             <Player songs={songs} />
              </div>
            
            <Link to="/"><button className={classes.btnHome}>HOME</button></Link>

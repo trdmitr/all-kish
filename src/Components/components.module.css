@@ -242,7 +242,7 @@ align-items: center;
 
 audio::-webkit-media-controls-enclosure {
 
-  background-color: #6b58d886;
+  background-color: #fffffff5;
   text-shadow: -1px -1.6px 0px #e4e0e7;
   box-shadow: var(--boxShadow);
 
@@ -258,7 +258,7 @@ audio::-webkit-media-controls-enclosure {
     margin-top: 10px;
     font-size: 2.5em;
     text-align: center;
-    /* background-color: #444; */
+    background-color: #44444473;
     text-shadow: var(--textShadow);
     /* box-shadow: var(--boxShadow); */
     border-radius: 1em;
