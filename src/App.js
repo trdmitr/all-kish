@@ -1,18 +1,12 @@
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useState } from 'react';
 import './App.css';
 import { HashRouter as Router, Routes, Route, useLocation, Link } from "react-router-dom";
-import Papa from "papaparse";
-// import { Context } from './Components/context'
 import { HomePage } from './Components/HomePage';
 import { CaverPage21 } from './Components/CaverPage21';
-import { CaverPage22 } from './Components/CaverPage22';
-import { CaverPage23 } from './Components/CaverPage23';
 import SinglPage from './Components/SinglPage';
 import { Context } from './Components/context'
-// import { useParseSongs } from './Components/API/SheetService';
 function NotFound() {
   let location = useLocation();
-
   return (
     <div>
       <h3>
@@ -22,7 +16,6 @@ function NotFound() {
     </div>
   );
 }
-
 function App() {
   const [sings, setSings] = useState({});
   console.log(sings)

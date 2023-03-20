@@ -3,7 +3,7 @@ import { useState} from "react";
 import classes from "./Player.module.css"
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
-// import Loader from '../Loader/Loader';
+import Loader from '../Loader/Loader';
 
 const Player = ({songs, songError}) => {
     const [trackIndex, setTrackIndex] = useState(0)
@@ -61,15 +61,12 @@ const Player = ({songs, songError}) => {
       return  [...audiosongs1, ...audiosongs2, ...audiosongs3, ...audiosongs4, ...audiosongs5, ...audiosongs6]
  .filter(e => e.src !== '');
 }, [songs])
-// const audioList = [...audiosongs1, ...audiosongs2, ...audiosongs3, ...audiosongs4, ...audiosongs5, ...audiosongs6]
-// .filter(e => e.src !== '');
   if (audioList.length === 0) {
-        // return <Loader/>
-        return <h1>Load...</h1>
+        return <div className='loadBlock'><Loader/></div> 
       }
-//       if (songError.length === 0) 
-// return <h1 >Ошибка загрузки!{songError}</h1>
-// console.log(audioList)
+      if (songError = false) 
+return <h1 className='loadBlock' >Ошибка загрузки!</h1>
+
     const handleClickPrevious = () => {
         setTrackIndex((currentTrack) =>
           currentTrack === 0 ? audioList.length - 1 : currentTrack - 1

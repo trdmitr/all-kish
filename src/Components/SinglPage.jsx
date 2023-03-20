@@ -1,61 +1,64 @@
-import React, { useContext, useEffect, useMemo} from 'react'
+import React, { Fragment, useContext, useMemo } from 'react'
 import { useParams } from "react-router";
 import classes from "./components.module.css"
 import { Link, useNavigate } from 'react-router-dom'
 import { Context } from './context'
 import ReactPlayer from 'react-player';
-const SinglPage = (songs) => {
-    const navigate = useNavigate();
-    const params = useParams();
-    const {sings, setSings} = useContext(Context);
-    const tzitata = (imgLink) => {
-        return (
-          <div className={classes.tziTata}>
-             {
-            imgLink.includes('http') ? <img className={classes.tziTata} src={imgLink} width={80} alt="Цитаты" />
-              : <p className={classes.tziTata}>{imgLink}</p>
-          }
-          </div>
-        )
-      }
-      const audioSource = (linkAuidio, linkName) => {
-        return (
-          <div>
-            <p>{linkName}</p>
-            <audio controls className={linkAuidio ? '' : classes.mediaHidden}
-              src={linkAuidio} type="audio/mpeg" />
-          </div>
-        )
-      }
-    
-      const videoSource = (linkVideo, linkName) => {
-        return (
-            <div>
+import Loader from './Loader/Loader';
+import RoundLoader from './Loader/RoundLoader';
+const SinglPage = () => {
+  const navigate = useNavigate();
+  const params = useParams();
+  const { sings} = useContext(Context);
+  const tzitata = (imgLink) => {
+    return (
+      <div className={classes.tziTata}>
+        {
+          imgLink.includes('http') ? <img className={classes.tziTata} src={imgLink} width={80} alt="Цитаты" />
+            : <p className={classes.tziTata}>{imgLink}</p>
+        }
+      </div>
+    )
+  }
+  const audioSource = (linkAuidio, linkName) => {
+    return (
+      <div>
         <p>{linkName}</p>
-        {linkVideo.includes('youtu.be') ? <ReactPlayer className={linkVideo ? '' : classes.mediaHidden.join(' ')} id={classes.videoFrame} url={linkVideo} controls={true} /> 
-        :  <video className={[classes.videoBlock, linkVideo ? '' : classes.mediaHidden].join(' ')} src={linkVideo} controls={true} type="video/mp4" ></video>}
-        </div>
-        )
-      }
-    // if (sings.length <= 0) {
-    //     return <h2>Load...</h2>
-    //     } 
-    console.log("sings: ", sings)
-    
+        <audio controls className={linkAuidio ? '' : classes.mediaHidden}
+          src={linkAuidio} type="audio/mpeg" />
+      </div>
+    )
+  }
 
-    //   sings.length ? 0 : 
-      const currSings = sings.filter(sings => sings.id === params.id);
-       
-     
-        
-        console.log(currSings)
-        const listContent = useMemo(() => {
-            if (!currSings.length) {
-        return <h2>Load...</h2>
-        } 
-            return currSings.map((currSing) =>
-            <>
-               <div className={classes.mediaSong} key={currSing.id}>
+  const videoSource = (linkVideo, linkName) => {
+    return (
+      <div>
+        <p>{linkName}</p>
+        {linkVideo.includes('youtu.be') ? <ReactPlayer className={linkVideo ? '' : classes.mediaHidden.join(' ')} id={classes.videoFrame} url={linkVideo} controls={true} />
+          : <video className={[classes.videoBlock, linkVideo ? '' : classes.mediaHidden].join(' ')} src={linkVideo} controls={true} type="video/mp4" ></video>}
+      </div>
+    )
+  }
+  const currSings = useMemo(() => {
+    if (sings.length === 0) {
+      return <Loader />
+    }
+    else {
+      return Array.from(sings).filter(sings => sings.id === params.id);
+    }
+  }, [sings])
+  const listContent = useMemo(() => {
+    if (!currSings.length) {
+      return (
+        <div className='loadBlock'>
+          <RoundLoader />
+          <Link to="/"><button className={classes.btnError}>На главную</button></Link>
+        </div>
+      )
+    }
+    return currSings.map((currSing) =>
+      <Fragment>
+        <div className={classes.mediaSong} key={currSing.id}>
           <img className={classes.mediaImage_modal} src={currSing.photo} width={80} alt={currSing.name} />
           <div className={classes.headerSong}>
             <p>{currSing.name}</p></div>
@@ -77,30 +80,27 @@ const SinglPage = (songs) => {
             {videoSource(currSing.video2, currSing.video_name2)}
             {videoSource(currSing.video3, currSing.video_name3)}
           </div>
-          {tzitata(currSing.picture)}  
-          <Link to="/cavers21"><button className={classes.bTnSing}>Назад</button></Link>                    
+          {tzitata(currSing.picture)}
+          <Link to="/cavers21"><button className={classes.bTnSing}>Назад</button></Link>
         </div>
-               
-               </>
-            );
-        
-          }, [currSings])
-    return (
-        <div className="device device-iphone-x">
-        <div className="device-frame">
-            <div className="device-content">
-            {listContent}
-              {/* <h1>SinglPage</h1>  */}
-            </div>
+        </Fragment>
+    );
+  }, [currSings])
+  return (
+    <div className="device device-iphone-x">
+      <div className="device-frame">
+        <div className="device-content">
+          {listContent}
         </div>
-        <div className="device-stripe"></div>
-        <div className="device-header">
-            <div className="device-sensors"></div>
-        </div>
-        <div className="device-btns"></div>
-        <div className="device-power"></div>
+      </div>
+      <div className="device-stripe"></div>
+      <div className="device-header">
+        <div className="device-sensors"></div>
+      </div>
+      <div className="device-btns"></div>
+      <div className="device-power"></div>
     </div>
-      )
+  )
 }
 
 export default SinglPage

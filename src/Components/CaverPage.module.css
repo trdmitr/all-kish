@@ -92,3 +92,13 @@
     border-radius: 50%;
     box-shadow: var(--boxShadow);
   }
+  .btnHome {
+    position: absolute;
+      top: 97%;
+      left: 40%;
+      border-radius: 0.5em;
+      padding: 0.5em;
+      color: black;
+      border: 1px solid #eeeeee;
+      background-color: var(--buttonBack);
+  }
