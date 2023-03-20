@@ -111,7 +111,7 @@ align-items: center;
 }
 
 .mediaSong {
-  font-family: "Pompadur";
+  font-family: "JakobCTT";
   font-size: 1rem;
   font-weight: normal;
   display: flex;
@@ -167,12 +167,12 @@ align-items: center;
   
   /* padding: 0.2rem 1.3rem; */
   color: var(--colorText);
-  /* background-color: var(--colorBackgroundAll); */
+  background-color: var(--colorBackgroundAll);
   border-radius: 0.5rem;
   /* border: 2px solid var(--titleSongColor); */
   /* border-bottom: 4px solid #b2b1b1; */
-  /* text-shadow: -1px -1.6px 0px #151616; */
-  /* box-shadow: var(--boxShadow); */
+  text-shadow: -1px -1.6px 0px #151616;
+  box-shadow: var(--boxShadow);
   cursor: pointer;
   padding: 0 1em 0 1em;
 }
@@ -207,9 +207,10 @@ align-items: center;
   /* padding: 0 1em 0 1em; */
   /* margin: 5em; */
   /* background-color: var(--tributeAfterBefore); */
+  background-color: var(--buttonBack);
   border-radius: 0.5em;
-  /* text-shadow: var(--textShadow); */
-  /* box-shadow: var(--boxShadow); */
+  text-shadow: var(--textShadow); 
+   box-shadow: var(--boxShadow);
 }
 
 .videoBlock p {
@@ -217,10 +218,10 @@ align-items: center;
   font-size: 1.5rem;
   text-align: center;
   color: var(--colorText);
-  /* background-color: var(--tributeAfterBefore); */
+  background-color: var(--buttonBack);
   border-radius: 0.5em;
-  /* text-shadow: var(--textShadow); */
-  /* box-shadow: var(--boxShadow); */
+  text-shadow: var(--textShadow);
+  box-shadow: var(--boxShadow);
 }
 
 .videoBlock {
@@ -272,6 +273,8 @@ audio::-webkit-media-controls-enclosure {
 .tziTata p {
   font-size: 0.5em;
   color: var(--colorText);
+  background-color: var(--buttonBack);
+  text-shadow: var(--textShadow); 
   /* border: 3px  solid 2196f3;    */
 }
 

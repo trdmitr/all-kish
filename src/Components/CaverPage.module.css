@@ -38,11 +38,11 @@
    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.3), 0 5px 21px 0 rgba(0,0,0,0.18);
 }
 .media p {
-  font-family: 'Pompadur';
+  font-family: 'JakobCTT';
     text-align: center;
     font-size: 1.7em;
     color: var(--colorText);
-    background-color: #b3b3b3;
+    background-color: var(--buttonBack);
     border-radius: 0.5em;
     border-top-left-radius: 0em;
     border-top-right-radius: 0em;
@@ -52,7 +52,7 @@
     /* padding: 0 1em 0 1em; */
 }
 .media span {
-  font-family: 'Pompadur';
+  font-family: 'JakobCTT';
     text-align: center;
     font-size: 1.7em;
     background-color: #688f6d;

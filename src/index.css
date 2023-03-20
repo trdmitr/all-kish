@@ -1,3 +1,18 @@
+@font-face {
+  /* font-family: 'Marck Script';
+  src: local('Marck Script'), local('MarckScript-Regular'), url("./fonts/MarckScript/marckscript.woff2") format('woff2'), url('./fonts/MarckScript/marckscript.woff') format('woff'), url('./fonts/MarckScript/marckscript.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal; */
+  /* font-family: 'Classica One';
+	src: url('./fonts/ClassicaOne/ClassicaOne.woff2') format('woff2'), url('./fonts/ClassicaOne/ClassicaOne.woff') format('woff');
+	font-weight: 400;
+	font-style: normal; */
+  font-family: 'JakobCTT';
+	src:  url('./fonts/jakobctt_8b806cbf869f1c45daf1949a025cd519.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -19,4 +34,5 @@ code {
   --buttonColor: #e2e3e4;
   --colorText: white;
   --textShadow: 0px 4px 4px rgba(0,0,0,0.25);
+  --colorBackgroundAll: #a0d7d7bd;
 }
