@@ -6,6 +6,9 @@ import { Context } from './context'
 import Player from './Player/Player';
 import RoundLoader from './Loader/RoundLoader';
 import Img from './UI/Img';
+import Modal from './UI/Modal/Modal';
+import About from './UI/About';
+import PlayButton from './UI/Modal/PlayButton';
 
 export const CaverPage21 = () => {
   const [data, setData] = useState({});
@@ -44,6 +47,7 @@ export const CaverPage21 = () => {
     }
     return songs?.map((song, i) => {
       return (
+      
         <Link key={i} to={`/cavers/${song.id}`} onClick={() => setSings(songs)}>
           <div className={classes.media}>
             <div className={classes.mediaImage}>
@@ -64,8 +68,14 @@ export const CaverPage21 = () => {
     <div className="device device-iphone-x">
       <div className="device-frame">
         <div className="device-content">
+       
           <div className={classes.row}>
+            <Modal visible={modal} setVisible={setModal}>
+              <About />
+            </Modal>
+            <PlayButton onClick={() => setModal(true)}>📌</PlayButton>
             <div className={classes.column50}>
+            {/*  */}
               {songError ? <h2>Ошибка загрузки!</h2> : ""}
               {singContent}
             </div>
