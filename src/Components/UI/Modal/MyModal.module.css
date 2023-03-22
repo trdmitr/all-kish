@@ -45,11 +45,10 @@ background-color:var(--colorBackgroundAll);
         top: -1%;
         left: 83%;
         background-color: var(--colorBackgroundAll);
-        border: none; /* Remove borders */
-        color: white; /* White text */
+        border: none; 
+        color: white; 
         padding: 2px 6px;
-        font-size: 14px; /* Set a font size */
-        cursor: pointer; /* Mouse pointer on hover */
+        font-size: 14px; 
         border-radius: .5em;
         cursor: pointer;
         /* z-index: 101; */
