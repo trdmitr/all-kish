@@ -171,6 +171,7 @@ align-items: center;
   border-radius: 0.5rem;
   /* border: 2px solid var(--titleSongColor); */
   /* border-bottom: 4px solid #b2b1b1; */
+  border: 3px solid  white;
   text-shadow: -1px -1.6px 0px #151616;
   box-shadow: var(--boxShadow);
   cursor: pointer;
@@ -211,6 +212,7 @@ align-items: center;
   border-radius: 0.5em;
   text-shadow: var(--textShadow); 
    box-shadow: var(--boxShadow);
+   border: 3px solid  white;
 }
 
 .videoBlock p {
@@ -220,6 +222,7 @@ align-items: center;
   color: var(--colorText);
   background-color: var(--buttonBack);
   border-radius: 0.5em;
+  border: 3px solid  white;
   text-shadow: var(--textShadow);
   box-shadow: var(--boxShadow);
 }
@@ -245,7 +248,8 @@ audio::-webkit-media-controls-enclosure {
 
   background-color: #fffffff5;
   text-shadow: -1px -1.6px 0px #e4e0e7;
-  box-shadow: var(--boxShadow);
+  /* box-shadow: var(--boxShadow); */
+  border: 5px solid  var(--buttonBack);;
 
 }
 

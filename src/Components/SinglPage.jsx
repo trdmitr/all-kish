@@ -1,7 +1,7 @@
 import React, { Fragment, useContext, useMemo } from 'react'
 import { useParams } from "react-router";
 import classes from "./components.module.css"
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate} from 'react-router-dom'
 import { Context } from './context'
 import ReactPlayer from 'react-player';
 import Loader from './Loader/Loader';
@@ -32,11 +32,11 @@ const SinglPage = () => {
 
   const videoSource = (linkVideo, linkName) => {
     return (
-      <div>
-        <p>{linkName}</p>
-        {linkVideo.includes('youtu.be') ? <ReactPlayer className={linkVideo ? '' : classes.mediaHidden.join(' ')} id={classes.videoFrame} url={linkVideo} controls={true} />
-          : <video className={[classes.videoBlock, linkVideo ? '' : classes.mediaHidden].join(' ')} src={linkVideo} controls={true} type="video/mp4" ></video>}
-      </div>
+        <div>
+    <p>{linkName}</p>
+    {linkVideo.includes('youtube.com') ? <ReactPlayer className={linkVideo ? '' : classes.mediaHidden.join(' ')} id={classes.videoFrame} url={linkVideo} controls={true} /> 
+    :  <video className={[classes.videoBlock, linkVideo ? '' : classes.mediaHidden].join(' ')} src={linkVideo} controls={true} type="video/mp4" ></video>}
+    </div>
     )
   }
   const currSings = useMemo(() => {
@@ -74,14 +74,15 @@ const SinglPage = () => {
           </div>
           <div className=
             {
-              classes.videoBlock
+              [classes.videoBlock, currSing.video1 ? '' : classes.mediaHidden].join(' ')
             }>
             {videoSource(currSing.video1, currSing.video_name1)}
             {videoSource(currSing.video2, currSing.video_name2)}
             {videoSource(currSing.video3, currSing.video_name3)}
           </div>
           {tzitata(currSing.picture)}
-          <Link to="/cavers21"><button className={classes.bTnSing}>Назад</button></Link>
+          {/* <Link to="/cavers21"><button className={classes.bTnSing}>Назад</button></Link> */}
+          <button className={classes.bTnSing} onClick={() => navigate(-1)}>Назад</button>
         </div>
         </Fragment>
     );
