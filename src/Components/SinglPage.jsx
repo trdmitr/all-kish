@@ -23,7 +23,7 @@ const SinglPage = () => {
   const audioSource = (linkAuidio, linkName) => {
     return (
       <div>
-        <p>{linkName}</p>
+        <p className={linkAuidio ? '' : classes.mediaHidden}>{linkName} </p>
         <audio controls className={linkAuidio ? '' : classes.mediaHidden}
           src={linkAuidio} type="audio/mpeg" />
       </div>
