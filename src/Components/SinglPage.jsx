@@ -33,7 +33,7 @@ const SinglPage = () => {
   const videoSource = (linkVideo, linkName) => {
     return (
         <div>
-    <p>{linkName}</p>
+    <p className={linkVideo ? '' : classes.mediaHidden}>{linkName}</p>
     {linkVideo.includes('youtube.com') ? <ReactPlayer className={linkVideo ? '' : classes.mediaHidden.join(' ')} id={classes.videoFrame} url={linkVideo} controls={true} /> 
     :  <video className={[classes.videoBlock, linkVideo ? '' : classes.mediaHidden].join(' ')} src={linkVideo} controls={true} type="video/mp4" ></video>}
     </div>
@@ -72,10 +72,10 @@ const SinglPage = () => {
             {audioSource(currSing.audio3, currSing.audio_name3)}
             {/* {audioSource(currSing.rezAudio2, currSing.rezAudio1)} */}
           </div>
-          <div className=
-            {
-              [classes.videoBlock, currSing.video1 ? '' : classes.mediaHidden].join(' ')
-            }>
+          <div className= {classes.videoBlock}
+            // {
+            //   [classes.videoBlock, currSing.video1 ? '' : classes.mediaHidden].join(' ')
+            >
             {videoSource(currSing.video1, currSing.video_name1)}
             {videoSource(currSing.video2, currSing.video_name2)}
             {videoSource(currSing.video3, currSing.video_name3)}

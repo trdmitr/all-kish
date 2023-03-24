@@ -165,13 +165,13 @@ align-items: center;
   text-align: right;
   font-size: 1.5rem;
   
-  /* padding: 0.2rem 1.3rem; */
+  padding: 0.2rem 1.3rem;
   color: var(--colorText);
   background-color: var(--colorBackgroundAll);
   border-radius: 0.5rem;
   /* border: 2px solid var(--titleSongColor); */
   /* border-bottom: 4px solid #b2b1b1; */
-  border: 3px solid  white;
+  border: 1px solid  white;
   text-shadow: -1px -1.6px 0px #151616;
   box-shadow: var(--boxShadow);
   cursor: pointer;
@@ -212,17 +212,17 @@ align-items: center;
   border-radius: 0.5em;
   text-shadow: var(--textShadow); 
    box-shadow: var(--boxShadow);
-   border: 3px solid  white;
+   border: 1px solid  white;
 }
 
 .videoBlock p {
-  display: block;
+  /* display: block; */
   font-size: 1.5rem;
   text-align: center;
   color: var(--colorText);
   background-color: var(--buttonBack);
   border-radius: 0.5em;
-  border: 3px solid  white;
+  border: 1px solid  white;
   text-shadow: var(--textShadow);
   box-shadow: var(--boxShadow);
 }
