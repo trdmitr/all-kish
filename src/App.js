@@ -1,3 +1,4 @@
+import React from 'react';
 import { Fragment, useState } from 'react';
 import './App.css';
 import { HashRouter as Router, Routes, Route, useLocation, Link } from "react-router-dom";

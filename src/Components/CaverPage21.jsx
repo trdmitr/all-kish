@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useMemo, useState } from 'react'
 import Papa from "papaparse";
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation} from 'react-router-dom';
 import classes from "./CaverPage.module.css"
 import { Context } from './context'
 import Player from './Player/Player';
@@ -13,7 +13,7 @@ import PlayButton from './UI/Modal/PlayButton';
 export const CaverPage21 = () => {
   const [data, setData] = useState({});
   const [songError, setSongError] = useState(false);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [modal, setModal] = useState(false);
   const location = useLocation();
   const urlParse21 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQbZ-zv6Iw7YB8B8IYyayLqLPyJYxdBl9tJoNB93wUb6_FmCntCAoiHEWmPo8Ohpg4LjZCLhU68a3no/pub?output=csv";
@@ -45,7 +45,7 @@ export const CaverPage21 = () => {
     if (songs.length === 0) {
       return <div className='loadBlock'><RoundLoader /></div>
     }
-    return songs?.map((song, i) => {
+    return songs.map((song, i) => {
       return (
       
         <Link key={i} to={`/cavers/${song.id}`} onClick={() => setSings(songs)}>

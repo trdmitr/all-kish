@@ -62,10 +62,12 @@ const Player = ({songs, songError}) => {
  .filter(e => e.src !== '');
 }, [songs])
   if (audioList.length === 0) {
-        return <div className='loadBlock'><Loader/></div> 
-      }
-      if (songError = false) 
-return <h1 className='loadBlock' >Ошибка загрузки!</h1>
+    return <div className='loadBlock'><Loader /></div>
+  }
+  if (songError = false) {
+    return <h1 className='loadBlock' >Ошибка загрузки!</h1>
+  }
+    
 
     const handleClickPrevious = () => {
         setTrackIndex((currentTrack) =>
