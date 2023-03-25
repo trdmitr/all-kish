@@ -19,7 +19,7 @@ function NotFound() {
 }
 function App() {
   const [sings, setSings] = useState({});
-  console.log(sings)
+  // console.log(sings)
   return (
     <div className="App">
       <Fragment>

@@ -40,7 +40,7 @@ export const CaverPage21 = () => {
   }, [])
   // console.log(data)
   const songs = Array.from(data);
-  const { sings, setSings } = useContext(Context);
+  const { setSings } = useContext(Context);
   const singContent = useMemo(() => {
     if (songs.length === 0) {
       return <div className='loadBlock'><RoundLoader /></div>
@@ -73,7 +73,9 @@ export const CaverPage21 = () => {
             <Modal visible={modal} setVisible={setModal}>
               <About />
             </Modal>
-            <PlayButton onClick={() => setModal(true)}>📌</PlayButton>
+            <PlayButton onClick={() => setModal(true)}>
+            <span role="img" aria-label="emoji name"> 📌 </span>
+            </PlayButton>
             <div className={classes.column50}>
             {/*  */}
               {songError ? <h2>Ошибка загрузки!</h2> : ""}

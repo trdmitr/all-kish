@@ -64,7 +64,7 @@ const Player = ({songs, songError}) => {
   if (audioList.length === 0) {
     return <div className='loadBlock'><Loader /></div>
   }
-  if (songError = false) {
+  if (songError === false) {
     return <h1 className='loadBlock' >Ошибка загрузки!</h1>
   }
     
