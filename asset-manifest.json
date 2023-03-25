@@ -1,7 +1,7 @@
 {
-  "main.css": "/all-kish/static/css/main.30bb54f5.chunk.css",
-  "main.js": "/all-kish/static/js/main.411f8916.chunk.js",
-  "main.js.map": "/all-kish/static/js/main.411f8916.chunk.js.map",
+  "main.css": "/all-kish/static/css/main.1c7b7a21.chunk.css",
+  "main.js": "/all-kish/static/js/main.37b268ad.chunk.js",
+  "main.js.map": "/all-kish/static/js/main.37b268ad.chunk.js.map",
   "static/js/1.f13e2d7f.chunk.js": "/all-kish/static/js/1.f13e2d7f.chunk.js",
   "static/js/1.f13e2d7f.chunk.js.map": "/all-kish/static/js/1.f13e2d7f.chunk.js.map",
   "static/css/2.5241b114.chunk.css": "/all-kish/static/css/2.5241b114.chunk.css",
@@ -10,9 +10,9 @@
   "runtime~main.js": "/all-kish/static/js/runtime~main.ea4c214c.js",
   "runtime~main.js.map": "/all-kish/static/js/runtime~main.ea4c214c.js.map",
   "static/media/index.css": "/all-kish/static/media/jakobctt_8b806cbf869f1c45daf1949a025cd519.f57c1202.woff",
-  "static/css/main.30bb54f5.chunk.css.map": "/all-kish/static/css/main.30bb54f5.chunk.css.map",
+  "static/css/main.1c7b7a21.chunk.css.map": "/all-kish/static/css/main.1c7b7a21.chunk.css.map",
   "static/css/2.5241b114.chunk.css.map": "/all-kish/static/css/2.5241b114.chunk.css.map",
   "index.html": "/all-kish/index.html",
-  "precache-manifest.b05355844464fb02b2147bf4c28bbe14.js": "/all-kish/precache-manifest.b05355844464fb02b2147bf4c28bbe14.js",
+  "precache-manifest.64da8c79f437cc0a293f5c079a4929fc.js": "/all-kish/precache-manifest.64da8c79f437cc0a293f5c079a4929fc.js",
   "service-worker.js": "/all-kish/service-worker.js"
 }
