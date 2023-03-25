@@ -1,7 +1,7 @@
 {
   "main.css": "/all-kish/static/css/main.1c7b7a21.chunk.css",
-  "main.js": "/all-kish/static/js/main.37b268ad.chunk.js",
-  "main.js.map": "/all-kish/static/js/main.37b268ad.chunk.js.map",
+  "main.js": "/all-kish/static/js/main.23755e03.chunk.js",
+  "main.js.map": "/all-kish/static/js/main.23755e03.chunk.js.map",
   "static/js/1.f13e2d7f.chunk.js": "/all-kish/static/js/1.f13e2d7f.chunk.js",
   "static/js/1.f13e2d7f.chunk.js.map": "/all-kish/static/js/1.f13e2d7f.chunk.js.map",
   "static/css/2.5241b114.chunk.css": "/all-kish/static/css/2.5241b114.chunk.css",
@@ -13,6 +13,6 @@
   "static/css/main.1c7b7a21.chunk.css.map": "/all-kish/static/css/main.1c7b7a21.chunk.css.map",
   "static/css/2.5241b114.chunk.css.map": "/all-kish/static/css/2.5241b114.chunk.css.map",
   "index.html": "/all-kish/index.html",
-  "precache-manifest.64da8c79f437cc0a293f5c079a4929fc.js": "/all-kish/precache-manifest.64da8c79f437cc0a293f5c079a4929fc.js",
+  "precache-manifest.bdc07b16e18a0074ba4da3e58db29023.js": "/all-kish/precache-manifest.bdc07b16e18a0074ba4da3e58db29023.js",
   "service-worker.js": "/all-kish/service-worker.js"
 }
