@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "MaKriDi media group",
+  "name": "all kish",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
+  "display-override": ["minimal-ui"],
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }

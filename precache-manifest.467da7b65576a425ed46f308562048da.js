@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/static/media/jakobctt_8b806cbf869f1c45daf1949a025cd519.f57c1202.woff"
   },
   {
-    "revision": "5f085bcd480beec37695b303ba60131e",
+    "revision": "476030a9fcf477d3ef925a3e09c74dd5",
     "url": "/index.html"
   }
 ];
