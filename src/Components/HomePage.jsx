@@ -16,7 +16,7 @@ export const HomePage = () => {
               <div className="device-content">
 
                   <div>
-                      <span className={classes.navLink}>Каверы КИШ за всё время! Выходу сериала посвящается!</span>
+                      <span className={classes.navLink}>Каверы КИШ за всё время! Выходу сериала и 50-летию Горшка посвящается!</span>
                       {/* <Link to={"/cavers21"} className={classes.navLink21}
                       onClick={() => {  handleClick(imgAlt);console.log('Клик!', value); }}                 
                     >2021</Link> */}
