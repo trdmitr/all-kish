@@ -1,6 +1,6 @@
 {
-  "short_name": "all-kish",
-  "name": "MaKriDi media group",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
