@@ -1,6 +1,6 @@
 {
-  "short_name": "MaKriDi media group",
-  "name": "all kish",
+  "short_name": "all-kish",
+  "name": "MaKriDi media group",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,7 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "display-override": ["minimal-ui"],
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
