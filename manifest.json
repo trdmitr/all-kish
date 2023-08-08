@@ -18,8 +18,15 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "https://trdmitr.github.io/all-kish",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "description": "MaKriDi media group production",
+  "orientation": "portrait",
+  "lang": "ru",
+  "categories": [
+    "lifestyle",
+    "music"
+  ]
 }
