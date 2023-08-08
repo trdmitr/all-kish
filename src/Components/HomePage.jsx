@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from "./components.module.css"
 import { Link } from 'react-router-dom';
-
+import AddToHomeScreenButton from './AddToHomeScreenButton/AddToHomeScreenButton'
 export const HomePage = () => {
     const imgUrl = "https://sun9-8.userapi.com/impg/izS9kaCmwq9r2xT2aLPTrsIwwCeLLrJi7WDtXg/mHyZNkck3wY.jpg?size=589x779&quality=96&sign=211cbc50d369ce10cb3b9f5e978a037b&type=album"
     const imgAlt = "Каверы Подземки"
@@ -28,7 +28,7 @@ export const HomePage = () => {
                           {/* <div className={classes.article}><p >Вот и всё что было...</p></div> */}
                           <div className={classes.article}><img src={imgUrl} width={100} alt={imgAlt} /></div>
                           {/* <div className={classes.article}><audio controls src={frontAudio} type="audio/mpeg" /></div> */}
-
+                            <AddToHomeScreenButton/>
                           <div className={classes.article}><img src={imgTzi} width={100} alt="Каверы Подземки" /> </div>
                       </div>
                   </div>

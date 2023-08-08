@@ -1,0 +1,11 @@
+.btn {
+    position: absolute;
+    top: 53%;
+    left: 11%;
+    font-size: medium;
+    color: rgb(38, 117, 185);
+    /* margin-bottom: 4em; */
+    background-color: rgb(29, 78, 78);
+    padding: 1em;
+    border-radius: 1em;
+}
