@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/all-kish/static/media/jakobctt_8b806cbf869f1c45daf1949a025cd519.f57c1202.woff"
   },
   {
-    "revision": "2d9ee0b57561d304f60c2aac7a227d14",
+    "revision": "ad1f59e0d6937d3fc67168f60a731552",
     "url": "/all-kish/index.html"
   }
 ];
