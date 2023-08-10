@@ -1,7 +1,7 @@
-{"short_name":"all-kish","name":"all-kish","background_color":"#ffffff","theme_color":"#ffffff","display":"standalone","orientation":"any","start_url":"https://trdmitr.github.io/all-kish/","scope":"https://trdmitr.github.io","id":"https://trdmitr.github.io/UArlizw1iOX9cd8Z92tW","related_applications":[],
+{"short_name":"all-kish","name":"all-kish","background_color":"#ffffff","theme_color":"#ffffff", "description": "MaKriDi media group production", "display":"standalone","orientation":"any","start_url":"https://trdmitr.github.io/all-kish/","scope":"https://trdmitr.github.io","id":"https://trdmitr.github.io/UArlizw1iOX9cd8Z92tW","related_applications":[],
 "icons":[{"src":"https://firebasestorage.googleapis.com/v0/b/pwaa-8d87e.appspot.com/o/UjqliwOblfs48ICSmQJG%2FCjORgjlIgTrvVMe.png?alt=media&token=29a5b8cd-794d-484f-b6fd-d4e44b152a0a",
 "sizes":"512x512","type":"image/png","purpose":"maskable"},{"src":"https://firebasestorage.googleapis.com/v0/b/pwaa-8d87e.appspot.com/o/UjqliwOblfs48ICSmQJG%2FCjORgjlIgTrvVMe.png?alt=media&token=29a5b8cd-794d-484f-b6fd-d4e44b152a0a",
-"sizes":"512x512","type":"image/png","purpose":"any"}],"categories":["lifestyle",
+"sizes":"512x512","type":"image/png","purpose":"any"}], "categories":["lifestyle",
 "music"],
 "protocol_handlers":[{"protocol":"web+pwa","url":"https://trdmitr.github.io/all-kish/"},{"protocol":"web+allkish",
 "url":"https://trdmitr.github.io/all-kish/"}]}
