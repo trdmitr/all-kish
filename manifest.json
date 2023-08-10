@@ -3,5 +3,5 @@
 "sizes":"512x512","type":"image/png","purpose":"maskable"},{"src":"https://firebasestorage.googleapis.com/v0/b/pwaa-8d87e.appspot.com/o/UjqliwOblfs48ICSmQJG%2FCjORgjlIgTrvVMe.png?alt=media&token=29a5b8cd-794d-484f-b6fd-d4e44b152a0a",
 "sizes":"512x512","type":"image/png","purpose":"any"}],"categories":["lifestyle",
 "music"],
-"protocol_handlers":[{"protocol":"web+pwa","url":"https://trdmitr.github.io/all-kish/?pwaprotocolredirect=%s"},{"protocol":"web+allkish",
-"url":"https://trdmitr.github.io/all-kish/?pwaprotocolredirect=%s"}]}
+"protocol_handlers":[{"protocol":"web+pwa","url":"https://trdmitr.github.io/all-kish/"},{"protocol":"web+allkish",
+"url":"https://trdmitr.github.io/all-kish/"}]}
